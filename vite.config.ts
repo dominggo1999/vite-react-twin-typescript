@@ -8,6 +8,11 @@ const r = (path) => resolve(dirname, path);
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  optimizeDeps: {
+    esbuildOptions: {
+      target: 'es2020',
+    },
+  },
   resolve: {
     alias: {
       '~': r('src'),

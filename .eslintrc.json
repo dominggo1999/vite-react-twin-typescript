@@ -5,7 +5,8 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb"
+        "airbnb",
+        "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -17,8 +18,12 @@
     },
     "plugins": [
         "react",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "prettier"
     ],
+    "globals": {
+        "DOMAttributes": "readonly"
+    },
     "rules": {
         "react/jsx-filename-extension": [
             0
@@ -76,6 +81,9 @@
                 "tsx": "never",
                 "json": "never"
             }
+        ],
+        "prettier/prettier": [
+            "error"
         ]
     },
     "settings": {

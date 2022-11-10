@@ -1,9 +1,7 @@
 import React from 'react';
 
 const Hello = () => {
-  return (
-    <div>Hello</div>
-  );
+  return <div>Hello world typescript !!</div>;
 };
 
 export default Hello;
